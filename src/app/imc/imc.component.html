@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="header">
+    <h2>
+      IMC component
+    </h2>
+  </div>
+
+  <div class="grid">
+    <div class="row">
+      <div class="col-6">
+        <div class="operation">
+          <div class="row">
+            <div class="col-12">
+              <input [(ngModel)]="peso"
+                     type="number"
+                     name="peso"
+                     placeholder="peso (kg)">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <input [(ngModel)]="altura"
+                     type="number"
+                     name="altura"
+                     placeholder="altura (cm)">
+            </div>
+          </div>
+          <div>
+            <div class="col-12">
+              <button (click)="calcularIMC()" class="button">
+                calcular
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="space"></div>
+      <div class="col-6">
+        <div class="result">
+            <span>
+              Seu IMC é {{resultado}}
+            </span>
+          <br />
+          <br />
+          <!-- http://drmarcoassuncao.com.br/wp-content/uploads/2016/08/imc.png -->
+          <img src="./../../assets/imc.png" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
