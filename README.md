@@ -1,4 +1,5 @@
 # ImcDeise
+Projeto angular contendo componente para cálculo de IMC (indice de massa corporal)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
